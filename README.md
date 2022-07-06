@@ -687,19 +687,21 @@ Accumulating evaluation results...
 
 ### Evaluation Performance
 
-| -------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| Model Version              | V1                                                          | V1                                                          |
-| uploaded Date              | 12/01/2020 (month/day/year)                                 | 09/21/2021 (month/day/year)                                 |
-| MindSpore Version          | 1.0.0                                                       | 1.5.0                                                       |
-| Dataset                    | COCO2017                                                    | COCO2017                                                    |
-| Training Parameters        | epoch=12,  batch_size = 2                                   | epoch=12,  batch_size = 2                                   |
-| Optimizer                  | Momentum                                                    | Momentum                                                         |
-| Loss Function              | Softmax Cross Entropy, Sigmoid Cross Entropy, SmoothL1Loss  | Softmax Cross Entropy, Sigmoid Cross Entropy, SmoothL1Loss  |
-| Output                     | Probability                                                 | Probability                                                 |
-| Loss                       | 0.88387                                                     | 0.60763                                                     |
-| Speed                      | 8pcs: 249 ms/step                                           | 8pcs: 795.645 ms/step                                       |
-| Total time                 | 8pcs: 6.23 hours                                            | 8pcs: 19.6 hours                                            |
-| Scripts                    | [maskrcnn script](https://gitee.com/mindspore/models/tree/master/official/cv/maskrcnn_mobilenetv1) |  [maskrcnn script](https://gitee.com/mindspore/models/tree/master/official/cv/maskrcnn_mobilenetv1) |
+| Parameters                 | Ascend                                                      | 
+| -------------------------- | ----------------------------------------------------------- | 
+| Model Version              | V1                                                          | 
+| Resource                   | Ascend 910; CPU 2.60GHz, 192cores; Memory 755G; OS Euler2.8 |             
+| uploaded Date              | 12/01/2020 (month/day/year)                                 | 
+| MindSpore Version          | 1.0.0                                                       | 
+| Dataset                    | COCO2017                                                    | 
+| Training Parameters        | epoch=12,  batch_size = 2                                   | 
+| Optimizer                  | Momentum                                                    | 
+| Loss Function              | Softmax Cross Entropy, Sigmoid Cross Entropy, SmoothL1Loss  | 
+| Output                     | Probability                                                 | 
+| Loss                       | 0.88387                                                     | 
+| Speed                      | 8pcs: 249 ms/step                                           | 
+| Total time                 | 8pcs: 6.23 hours                                            | 
+| Scripts                    | [maskrcnn script](https://gitee.com/mindspore/models/tree/master/official/cv/maskrcnn_mobilenetv1) |
 
 ### Inference Performance
 
